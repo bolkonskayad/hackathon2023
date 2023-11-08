@@ -1,0 +1,2483 @@
+{
+	"info": {
+		"_postman_id": "f4d47679-5557-41ab-a2ef-003e6783588b",
+		"name": "Хакатон",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22404545"
+	},
+	"item": [
+		{
+			"name": "регистрация",
+			"item": [
+				{
+					"name": "пустые поля",
+					"item": [
+						{
+							"name": "Проверка запроса регитрации с пустым firstName",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":null,\r\n  \"lastName\":\"Диана\",\r\n  \"middleName\":\"Олеговна\",\r\n  \"birthDate\":\"2002-01-31\",\r\n  \"email\":\"test1@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка запроса регитрации с пустым lastName",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Чибисова\",\r\n  \"lastName\":null,\r\n  \"middleName\":\"Олеговна\",\r\n  \"birthDate\":\"2002-01-31\",\r\n  \"email\":\"test2@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка запроса регитрации с пустым gender",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Чибисова\",\r\n  \"lastName\":\"Диана\",\r\n  \"middleName\":\"Олеговна\",\r\n  \"birthDate\":\"2002-01-31\",\r\n  \"email\":\"test3@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":null\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка запроса регитрации с пустым middleName",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Чибисова\",\r\n  \"lastName\":\"Диана\",\r\n  \"middleName\": null,\r\n  \"birthDate\":\"2002-01-31\",\r\n  \"email\":\"test4@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка запроса регитрации с пустым birthDate",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Чибисова\",\r\n  \"lastName\":\"Диана\",\r\n  \"middleName\":\"Олеговна\",\r\n  \"birthDate\":null,\r\n  \"email\":\"test5@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка запроса регитрации с пустым email",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Чибисова\",\r\n  \"lastName\":\"Диана\",\r\n  \"middleName\":\"Олеговна\",\r\n  \"birthDate\":\"2002-01-31\",\r\n  \"email\":null,\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка запроса регитрации с пустым password",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Чибисова\",\r\n  \"lastName\":\"Диана\",\r\n  \"middleName\":\"Олеговна\",\r\n  \"birthDate\":\"2002-01-31\",\r\n  \"email\":\"test7@mail.ru\",\r\n  \"password\":null,\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "firstName",
+					"item": [
+						{
+							"name": "Проверка поля firstName валидным граничным значением (2 символа) в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Di\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test8@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}   ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля firstName невалидным граничным значением (1 символ) в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"D\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля firstName валидным граничным значением (30 символов) в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diiiiiiiiiiiiiiiiiiiiiiiiiiiii\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"te795975987st@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля firstName невалидным граничным значением (31 символ) в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diiiiiiiiiiiiiiiiiiiiiiiiiiiiii\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка текстового поля firstName числовым значением в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":463,\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля firstName с добавлением произвольного символа в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana)\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "lastName",
+					"item": [
+						{
+							"name": "Проверка поля lstName граничным валидным значением (2 символа) в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Ch\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля lastName граничным невалидным значением (1 символ) в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"C\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля lastName граничным валидным значением (30 символов) в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisovaaaaaaaaaaaaaaaaaaaaaa\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test780578t@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля lastName граничным невалидным значением (31 символ) в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisovaaaaaaaaaaaaaaaaaaaaaaa\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"tes7t7569875t@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка текстового поля lastName числовым значением в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":2314,\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка текстового поля lastName кирилицей в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Чибисова\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"8709686@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка текстового поля lastName с добавлением символа в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova*\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "middleName",
+					"item": [
+						{
+							"name": "Проверка текстового поля middleName валидным граничным значением (2 символа) в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Ol\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test465698954@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка текстового поля middleName невалидным граничным значением (1 символ) в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"O\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test34563645@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка текстового поля middleName валидным граничным значением (30 символов) в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovnaaaaaaaaaaaaaaaaaaaaaaa\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test563564@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка текстового поля middleName невалидным граничным значением (31 символ) в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovnaaaaaaaaaaaaaaaaaaaaaaaa\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test345775457@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка текстового поля middleName числовым значением в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":346,\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка текстового поля middleName кирилицей в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Олеговна\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test4352655634@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка текстового поля middleName с добавлением символа в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna)\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test6749674@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "email",
+					"item": [
+						{
+							"name": "Проверка поля email без @ в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"testmail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля email без . в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test@mailru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля email пустым доменом в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test@\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля email пустым вторым уровнем домена в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test@.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля email пустым верхним уровнем домена в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test@укеу.\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля email невалидным количеством символов (1 символ) верхнего домена email в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test@mail.r\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля email невалидным количеством символов (7 символ) верхнего домена email в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test@mail.ruuuuuu\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля email валидным количеством символов (6 символ) верхнего домена email в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test@mail.ruuuuu\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "birthdate",
+					"item": [
+						{
+							"name": "Проверка поля birthdate, когда пользователь с датой рождения завтрашнего дня в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2023-03-07\",\r\n  \"email\":\"test3566@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля birthdate, когда день рождения это сегодняшняя дата в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2023-03-06\",\r\n  \"email\":\"test78@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля birthdate,пользователю = 100 лет в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"1923-03-06\",\r\n  \"email\":\"test35475375@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля birthdate текстовым значением в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"YYYY-MM-DD\",\r\n  \"email\":\"tes45345t@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля birthdate датой (100 лет и 1 день) регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"1923-03-05\",\r\n  \"email\":\"test346566356@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля birthdate форматом YYYY/MM/DD в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2000/12/16\",\r\n  \"email\":\"test5643645@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля birthdate годом 0000 в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"0000-12-16\",\r\n  \"email\":\"tes453656t@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля birthdate некорректным значением месяца в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-13-26\",\r\n  \"email\":\"tes546788t@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля birthdate значением месяца 00 в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-00-26\",\r\n  \"email\":\"tes34566t@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля birthdate значением дня 00 в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-01-00\",\r\n  \"email\":\"test5466453@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля birthdate невалидным значением дня = 32 в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-01-32\",\r\n  \"email\":\"tes4657675t@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля birthdate с нулями вместо даты в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"0000-00-00\",\r\n  \"email\":\"tes54684t@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля birthdate форматом MM-DD-YYYY в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"01-05-2000\",\r\n  \"email\":\"tes54654t@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля birthdate невалиднм форматом даты YYYY-M-D в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"1968-1-1\",\r\n  \"email\":\"tes4356t@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля birthdate значением 1900-01-01 в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"1900-01-01\",\r\n  \"email\":\"te345775st@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля birthdate значением 1970-01-01 в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"1970-01-01\",\r\n  \"email\":\"tes34653456t@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля birthdate значением 9999-99-99 в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"9999-99-99\",\r\n  \"email\":\"tes67556t@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля birthdate значением 9999-01-01 в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"9999-01-01\",\r\n  \"email\":\"test5656@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "password",
+					"item": [
+						{
+							"name": "Проверка поля password невалидным количеством симоволов (5 символов) в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"tes435643t@mail.ru\",\r\n  \"password\":\"Chis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля password невалидным количеством симоволов (21 символов) в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"tes435t@mail.ru\",\r\n  \"password\":\"Chis8iiiiiiiiiiiiiiii\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля password валидным количеством симоволов (20 символов) в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"tes244t@mail.ru\",\r\n  \"password\":\"Chis8iiiiiiiiiiiiiii\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля password без заглавной литеры в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"tes42424t@mail.ru\",\r\n  \"password\":\"his8iiiiiiiiiiiii\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля password без строчных букв в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"tes242784t@mail.ru\",\r\n  \"password\":\"CIU88987\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля password без спец.символ|цифр в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test@mail.ru\",\r\n  \"password\":\"CIUiiiiiiiiiiiii\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля password с спец символом в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test76@mail.ru\",\r\n  \"password\":\"Chis*iiiiiii\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "gender",
+					"item": [
+						{
+							"name": "Проверка поля gender невалидным значением  в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"tes3223t@mail.ru\",\r\n  \"password\":\"Chis*i8iiiiiiiiiii\",\r\n  \"gender\":\"NOBINARY\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля gender валидным значением  в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"te32323st@mail.ru\",\r\n  \"password\":\"Chis*8iiiii\",\r\n  \"gender\":\"FEMALE\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Проверка поля gender валидным значением  в запросе регистрации",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\":\"Diana\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Olegovna\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"te332st@mail.ru\",\r\n  \"password\":\"Chis*ii8iii\",\r\n  \"gender\":\"MALE\"\r\n}  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+									"protocol": "https",
+									"host": [
+										"ed-platform-6109",
+										"nh2023",
+										"codenrock",
+										"com"
+									],
+									"path": [
+										"api",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Проверка запроса регистрации при валидных данных",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\":\"Чибисова\",\r\n  \"lastName\":\"Диана\",\r\n  \"middleName\":\"Олеговна\",\r\n  \"birthDate\":\"2002-01-31\",\r\n  \"email\":\"tes45t@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+							"protocol": "https",
+							"host": [
+								"ed-platform-6109",
+								"nh2023",
+								"codenrock",
+								"com"
+							],
+							"path": [
+								"api",
+								"registration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Проверка запроса регистрации при валидных данных повтор",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\":\"Чибисова\",\r\n  \"lastName\":\"Диана\",\r\n  \"middleName\":\"Олеговна\",\r\n  \"birthDate\":\"2002-01-31\",\r\n  \"email\":\"test@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/registration",
+							"protocol": "https",
+							"host": [
+								"ed-platform-6109",
+								"nh2023",
+								"codenrock",
+								"com"
+							],
+							"path": [
+								"api",
+								"registration"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "авторизация",
+			"item": [
+				{
+					"name": "Проверка запроса авторизации с пустым email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"email\": \"Vova2002\", \r\n    \"password\": \"1q2w3e4r5tZ*.\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/login",
+							"protocol": "https",
+							"host": [
+								"ed-platform-6109",
+								"nh2023",
+								"codenrock",
+								"com"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Авторизация с валидными данными",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"email\": \"nikita2002za@mail.ru\", \r\n    \"password\": \"Vova2002\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/login",
+							"protocol": "https",
+							"host": [
+								"ed-platform-6109",
+								"nh2023",
+								"codenrock",
+								"com"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Проверка запроса авторизации с пустым password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"email\": \"nikita2002za@mail.ru\", \r\n    \"password\": \"\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/login",
+							"protocol": "https",
+							"host": [
+								"ed-platform-6109",
+								"nh2023",
+								"codenrock",
+								"com"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "редактирование лк",
+			"item": [
+				{
+					"name": "Редактирование firstname",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\":\"22\",\r\n  \"firstName\":\"Ди\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Олеговна\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test4352655634@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/user",
+							"protocol": "https",
+							"host": [
+								"ed-platform-6109",
+								"nh2023",
+								"codenrock",
+								"com"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Редактирование lastname",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\":\"22\",\r\n  \"firstName\":\"Диана\",\r\n  \"lastName\":\"Чибисова\",\r\n  \"middleName\":\"Олеговна\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test4352655634@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/user",
+							"protocol": "https",
+							"host": [
+								"ed-platform-6109",
+								"nh2023",
+								"codenrock",
+								"com"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Редактирование middlename",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\":\"22\",\r\n  \"firstName\":\"Диана\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Олеговн\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test4352655634@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/user",
+							"protocol": "https",
+							"host": [
+								"ed-platform-6109",
+								"nh2023",
+								"codenrock",
+								"com"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Редактирование email",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\":\"22\",\r\n  \"firstName\":\"Диана\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Олеговна\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test435265564@mail.ru\",\r\n  \"password\":\"Chibis8\",\r\n  \"gender\":\"NON_BINARY\"\r\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/user",
+							"protocol": "https",
+							"host": [
+								"ed-platform-6109",
+								"nh2023",
+								"codenrock",
+								"com"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Редактирование password",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\":\"22\",\r\n  \"firstName\":\"Диана\",\r\n  \"lastName\":\"Chibisova\",\r\n  \"middleName\":\"Олеговна\",\r\n  \"birthDate\":\"2001-12-26\",\r\n  \"email\":\"test4352655634@mail.ru\",\r\n  \"password\":\"Chibis8*\",\r\n  \"gender\":\"NON_BINARY\"\r\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/user",
+							"protocol": "https",
+							"host": [
+								"ed-platform-6109",
+								"nh2023",
+								"codenrock",
+								"com"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Кусы",
+			"item": [
+				{
+					"name": "Просмотр всех курсов",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/courses",
+							"protocol": "https",
+							"host": [
+								"ed-platform-6109",
+								"nh2023",
+								"codenrock",
+								"com"
+							],
+							"path": [
+								"api",
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Подписка на курс",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\" : 22,\r\n    \"courseId\" : 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/user/subscribe",
+							"protocol": "https",
+							"host": [
+								"ed-platform-6109",
+								"nh2023",
+								"codenrock",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"subscribe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Просмотр курса по id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/courses/2",
+							"protocol": "https",
+							"host": [
+								"ed-platform-6109",
+								"nh2023",
+								"codenrock",
+								"com"
+							],
+							"path": [
+								"api",
+								"courses",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Уроки",
+			"item": [
+				{
+					"name": "Просмотр урока",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/lesson/1",
+							"protocol": "https",
+							"host": [
+								"ed-platform-6109",
+								"nh2023",
+								"codenrock",
+								"com"
+							],
+							"path": [
+								"api",
+								"lesson",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Просмотр уроков по id курса",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/lessons/1",
+							"protocol": "https",
+							"host": [
+								"ed-platform-6109",
+								"nh2023",
+								"codenrock",
+								"com"
+							],
+							"path": [
+								"api",
+								"lessons",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "рестарт если коннект крашнется",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ed-platform-6109.nh2023.codenrock.com/api/restart",
+					"protocol": "https",
+					"host": [
+						"ed-platform-6109",
+						"nh2023",
+						"codenrock",
+						"com"
+					],
+					"path": [
+						"api",
+						"restart"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

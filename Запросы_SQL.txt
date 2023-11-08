@@ -1,0 +1,27 @@
+SELECT * FROM _user WHERE email ='test8@mail.ru'
+
+SELECT * FROM _user WHERE email ='test23@mail.ru'
+
+SELECT * FROM _user WHERE email ='test34563645@mail.ru'
+
+
+SELECT * FROM _user WHERE email ='test@mailru'
+
+SELECT * FROM _user WHERE email ='test@mail.r'
+
+
+SELECT * FROM _user WHERE email ='test@mail.ruuuuuu'
+
+
+SELECT * FROM _user WHERE email ='test346566356@mail.ru'
+
+SELECT * FROM _user WHERE email ='tes453656t@mail.ru'
+
+
+SELECT * FROM _user WHERE email ='te345775st@mail.ru'
+
+
+SELECT * FROM _user WHERE email ='test76@mail.ru'
+
+
+
